@@ -8,4 +8,5 @@ module com.example.java {
     exports com.javafx.Layouts;
     exports com.javafx.Ventanas;
     exports com.javafx.Emergente;
+    exports com.javafx.AppCompleta;
 }

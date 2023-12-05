@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class ApplicationTextField extends Application {
@@ -97,13 +98,32 @@ public class ApplicationTextField extends Application {
         if(txtEquipo.getText().length()==0) mensaje+="\nEl nombre del equipo es requerido.";
         if(txtJugador.getText().length()==0) mensaje+="\nEl nombre del jugador es requerido.";
         if(mensaje.length()==0){
+
+            if(comprobarEntero(txtPuntos, "Debes introducir un numero entero")){
+
+
             mensaje = "El jugador " + txtJugador.getText() + " que juega en " + txtEquipo.getText() + " anota" + txtPuntos.getText() + " puntos por partido";
             VentanaEmergente.mostrar(mensaje, "Datos del jugador");
+
+            }else{
+                txtPuntos.requestFocus();
+            }
+
         }else{
             VentanaEmergente.mostrar(mensaje, "Faltan datos");
         }
 
     }
 
+    private boolean comprobarEntero(TextField f,String mensaje){
+        try{
+            Integer.parseInt(f.getText());
+            return true;
+        }catch (NumberFormatException e){
+            VentanaEmergente.mostrar(mensaje, "As introducido un valor no numerico.");
+
+            return false;
+        }
+    };
     private TextField txtEquipo, txtJugador, txtPuntos;
 }

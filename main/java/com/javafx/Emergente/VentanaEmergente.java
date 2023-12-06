@@ -8,7 +8,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class VentanaEmergente {
-    public static void mostrar(String mensaje, String titulo){
+    public static void mostrar(String mensaje, String titulo, int ancho, int alto){
 
         Stage miStage = new Stage();
         miStage.initModality(Modality.APPLICATION_MODAL);
@@ -27,7 +27,7 @@ public class VentanaEmergente {
 
         BorderPane mipanel = new BorderPane();
 
-        Scene miScene = new Scene(mipanel,150,50);
+        Scene miScene = new Scene(mipanel,ancho,alto);
         mipanel.setTop(milabel);
         mipanel.setCenter(miboton);
 

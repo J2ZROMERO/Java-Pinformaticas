@@ -103,14 +103,14 @@ public class ApplicationTextField extends Application {
 
 
             mensaje = "El jugador " + txtJugador.getText() + " que juega en " + txtEquipo.getText() + " anota" + txtPuntos.getText() + " puntos por partido";
-            VentanaEmergente.mostrar(mensaje, "Datos del jugador");
+            VentanaEmergente.mostrar(mensaje, "Datos del jugador",500,150);
 
             }else{
                 txtPuntos.requestFocus();
             }
 
         }else{
-            VentanaEmergente.mostrar(mensaje, "Faltan datos");
+            VentanaEmergente.mostrar(mensaje, "Faltan datos",500,350);
         }
 
     }
@@ -120,7 +120,7 @@ public class ApplicationTextField extends Application {
             Integer.parseInt(f.getText());
             return true;
         }catch (NumberFormatException e){
-            VentanaEmergente.mostrar(mensaje, "As introducido un valor no numerico.");
+            VentanaEmergente.mostrar(mensaje, "As introducido un valor no numerico.",200,200);
 
             return false;
         }

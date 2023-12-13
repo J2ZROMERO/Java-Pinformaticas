@@ -35,4 +35,32 @@ public class VentanaEmergente {
         miStage.showAndWait();
 
     }
+
+    public static void mostrar(String mensaje, String titulo){
+
+        Stage miStage = new Stage();
+        miStage.initModality(Modality.APPLICATION_MODAL);
+
+        miStage.setTitle(titulo);
+
+        miStage.setMinWidth(250);
+        Label milabel = new Label();
+
+        milabel.setText(mensaje);
+
+        Button miboton = new Button();
+        miboton.setText("Cerrar");
+
+        miboton.setOnAction(e->miStage.close());
+
+        BorderPane mipanel = new BorderPane();
+
+        Scene miScene = new Scene(mipanel,100,250);
+        mipanel.setTop(milabel);
+        mipanel.setCenter(miboton);
+
+        miStage.setScene(miScene);
+        miStage.showAndWait();
+
+    }
 }

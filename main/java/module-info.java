@@ -10,4 +10,5 @@ module com.example.java {
     exports com.javafx.Emergente;
     exports com.javafx.AppCompleta;
     exports com.javafx.Controles;
+    exports com.javafx.sceneBuilder;
 }

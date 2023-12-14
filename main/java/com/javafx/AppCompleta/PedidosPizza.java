@@ -21,6 +21,7 @@ public class PedidosPizza extends Application {
     public void start(Stage primaryStage) {
 
         miStage = primaryStage;
+        miStage = primaryStage;
 
         // -------- Creacion del panel superior ----------------
         Text txtCabecera = new Text("Pide tu pizza ahora");

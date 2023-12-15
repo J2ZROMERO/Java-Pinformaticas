@@ -16,7 +16,11 @@ public class escena extends Application {
     public void start(Stage primaryStage) {
 try {
     Parent root = FXMLLoader.load(getClass().getResource("/com/example/java/other.fxml"));
+
+    String css =  this.getClass().getResource("/com.example.java.styles/app.css").toExternalForm();
+
     Scene scene = new Scene(root);
+    scene.getStylesheets().add(css);
     primaryStage.setScene(scene);
     primaryStage.show();
 }catch (Exception e){

@@ -3,8 +3,8 @@ package com.poo.classes_objects;
 public class Vehiculos {
 
 
-    public Vehiculos(){ // Constructor de la clase es el mismo nombre que la clase
-    ruedas=4;
+    public Vehiculos(int ruedas){ // Constructor de la clase es el mismo nombre que la clase
+    this.ruedas=ruedas;
     largo=2;
     ancho=1;
     peso=2;
@@ -12,14 +12,17 @@ public class Vehiculos {
 
     }
 
-        public void setColor(){ // establece color
-        color="azul";
+    public void setColor(String color){ // establece color
+        this.color=color;
         }
 
         public String getColor(){ // obtener color
         return color;
         }
 
+        public String getDatosVehivulo(){
+        return "Tu vehiculo tiene " + ruedas + " Ademas tiene  "+largo + " Metros de largo.";
+        }
 
     private int ruedas;
     private String color;

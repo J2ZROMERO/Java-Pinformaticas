@@ -1,4 +1,4 @@
-package com.poo.classes_objects;
+package com.poo.classes_objects.vehiculos;
 
 public class Vehiculos {
 
@@ -24,11 +24,30 @@ public class Vehiculos {
         return "Tu vehiculo tiene " + ruedas + " Ademas tiene  "+largo + " Metros de largo.";
         }
 
+        public void setExtra (boolean climatizador){
+        this.climatizador = climatizador;
+
+        }
+
+        public String getExtra(){
+            if(climatizador == true) return "tu coche tiene climatizador";
+            else return "tu coche no tiene climatizador";
+        }
+
+        public void setExtra(boolean gps, boolean climatizador, boolean tapiceria_cuero){
+
+        }
+
+
     private int ruedas;
     private String color;
     private int largo;
     private int ancho;
     private int peso;
+    private boolean climatizador;
+    private boolean tapiceria_cuero;
+    private boolean gps;
+
 
 
 

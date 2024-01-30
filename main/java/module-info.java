@@ -10,6 +10,7 @@ module com.example.java {
     exports com.javafx.Emergente;
     exports com.javafx.AppCompleta;
     exports com.javafx.Controles;
-    exports com.poo.classes_objects;
+    exports com.poo.classes_objects.vehiculos;
+    exports com.poo.classes_objects.cuentaCorriente;
     exports com.javafx.sceneBuilder;
 }

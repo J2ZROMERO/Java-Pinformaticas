@@ -1,4 +1,4 @@
-package com.poo.classes_objects;
+package com.poo.classes_objects.vehiculos;
 
 public class UsoVehiculos {
 

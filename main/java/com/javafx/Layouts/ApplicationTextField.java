@@ -1,4 +1,4 @@
-package com.javafx.Layouts;
+/*package com.javafx.Layouts;
 
 import com.JavaFx.emergente.VentanaEmergente;
 import javafx.application.Application;
@@ -127,3 +127,4 @@ public class ApplicationTextField extends Application {
     };
     private TextField txtEquipo, txtJugador, txtPuntos;
 }
+*/

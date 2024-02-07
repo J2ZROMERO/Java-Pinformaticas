@@ -1,6 +1,5 @@
 package com.javafx.Controles;
-
-import com.JavaFx.emergente.VentanaEmergente;
+import com.javafx.Emergente.VentanaEmergente;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;

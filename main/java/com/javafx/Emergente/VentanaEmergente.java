@@ -1,4 +1,4 @@
-package com.JavaFx.emergente;
+package com.javafx.Emergente;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Button;

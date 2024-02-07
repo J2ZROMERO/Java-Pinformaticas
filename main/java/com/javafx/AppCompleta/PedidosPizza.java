@@ -196,7 +196,7 @@ public class PedidosPizza extends Application {
         if(ingredientes.equalsIgnoreCase("")) msg+="Sin ingredientes.";
         else msg+="Y con los siguientes ingredientes: \n" + ingredientes;
 
-        com.JavaFx.emergente.VentanaEmergente.mostrar(msg,"Detalles del pedido",500,200);
+        com.javafx.Emergente.VentanaEmergente.mostrar(msg,"Detalles del pedido",500,200);
 
 
     }

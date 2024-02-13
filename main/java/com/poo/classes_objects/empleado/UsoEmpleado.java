@@ -8,7 +8,7 @@ package com.poo.classes_objects.empleado;
 // static son valores usados por la misma clase no importan cuantas instancias sean creadas estas van a compartir el mismo valor.
 // a las variables static se les denomina variables de clase
 // stattic values nunca perteneceran a las variables o instancias
-
+// cuando hablamos de static nos referimos que estas no son partes del objecto o un objecto sino de clase
 public class UsoEmpleado {
     public static void main(String[] args) {
 
@@ -18,6 +18,8 @@ public class UsoEmpleado {
         System.out.println(empleado2.getDatosEmpleado());
         Empleados empleado3 = new Empleados("zepeda");
         System.out.println(empleado3.getDatosEmpleado());
+
+        System.out.println(Empleados.getIdSiguiente());
 
 
 
@@ -41,6 +43,10 @@ class Empleados {
 
     public String getDatosEmpleado(){
         return "El empleado " + name + " pertenece a la seccion "+ section + " Y tiene el numero "+ id ;
+    }
+
+    public static String getIdSiguiente(){
+        return "El id del siguiente empleado sera " + idSiguiente;
     }
     private final String name; // now this is constant
     private  String section;

@@ -7,15 +7,23 @@ public class Colegioo {
     public Colegioo(String name, int capacity){
         this.name = name;
         this.alumns = new Alumno[capacity];
-        this.alumnsCopy = new Alumno[capacity];
     }
 
+
+
+
+    public String getName(){
+        return this.name;
+    }
+
+    public Alumno getAlumno(int nAlumno){
+        return alumns[nAlumno];
+
+    };
 public void createAlumn(String  name, double average){
-
-        this.alumns[idAlumn] = new Alumno(name,average,this.idAlumn);
-
-        idAlumn++;
-
+        Alumno nuevoalumno = new Alumno(this,name,average);
+        alumns[idArray] = nuevoalumno;
+        idArray++;
 }
 
 
@@ -26,11 +34,11 @@ int index = Arrays.binarySearch(alumns,alumno);
 
 if (index >= 0){
     for (int i = 0; i < alumns.length - 1 ; i++) {
-        if(!alumno.equalsIgnoreCase(alumnsCopy[i].name)){
-                   alumnsCopy[i] = alumns[i];
+        if(!alumno.equalsIgnoreCase(alumns[i].getName())){
+                   alumns[i] = null;
         }
     }
-    alumns = alumnsCopy;
+
 }else{
     System.out.println("User not found");
 }
@@ -51,21 +59,33 @@ if (index >= 0){
 
     public void  getAttAlmns(){
 
-        for(Alumno alumn : alumns){
-            System.out.println("Nombre alumno : " +alumn.getName());
-            System.out.println("Colegio : "+ this.name);
-            System.out.println("Id Alumno : "+ alumn.getId());
-            System.out.println("Nota media : " + alumn.getAverage());
-        }
+        for(int i =0; i < alumns.length;i++){
+            if(alumns[i]!=null){
+                System.out.println(this.getAlumno(i));
+                System.out.println();
+            }
+
+        }    }
 
 
+public void getDatosAlumno(String nAlumn){
+
+
+    int index = Arrays.binarySearch(alumns,nAlumn);
+
+    if (index >= 0){
+        this.getAlumno(index);
+    }else{
+        System.out.println("User not found");
+    }
     }
 
-    private static int idAlumn = 1;
-    private String name;
 
+
+    private String name;
     private Alumno alumns[];
-    private Alumno alumnsCopy[];
+    private int idArray = 0;
+
 
 }
 

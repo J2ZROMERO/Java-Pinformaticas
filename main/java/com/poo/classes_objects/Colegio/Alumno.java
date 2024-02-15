@@ -11,10 +11,7 @@ public class Alumno {
 
     }
 
-public void setNota(double nota){
-    this.average = nota;
-
-}
+public void setNota(double nota){ this.average = nota;}
 
 
 public String getName(){
@@ -35,5 +32,5 @@ public String toString(){
     private String name;
     private double average;
     private int id;
-    private int nAlumno = 1;
+    private static int nAlumno = 1;
 }

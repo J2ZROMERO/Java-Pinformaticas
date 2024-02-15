@@ -11,8 +11,16 @@ public class UsoColegio {
         SanJavier.createAlumn("jose", 9.5);
         SanJavier.createAlumn("Sara",10);
 
-        SanJavier.getAttAlmns();
-    }
+        SanJavier.getDatosAlumno("sara");
+        SanJavier.getAlumno(1).setNota(7);
+        SanJavier.getDatosAlumno("sara");
 
+        SanJavier.removeStudent("sara");
+        System.out.println();
+        System.out.println("--------------------------------");
+
+        SanJavier.getAllAlumns();
+
+    }
 
 }

@@ -30,34 +30,31 @@ public void createAlumn(String  name, double average){
 
 public void removeStudent(String alumno){
 
-int index = Arrays.binarySearch(alumns,alumno);
+    for (int i = 0; i < alumns.length; i++) {
+        if(this.getAlumno(i)!=null){
+            if(alumns[i].getName().equalsIgnoreCase(alumno)){
+                alumns[i]=null;
+            }
 
-if (index >= 0){
-    for (int i = 0; i < alumns.length - 1 ; i++) {
-        if(!alumno.equalsIgnoreCase(alumns[i].getName())){
-                   alumns[i] = null;
+
         }
     }
-
-}else{
-    System.out.println("User not found");
-}
 }
 
 
     public void setNotaMedia(String alumno, double nota){
 
-        int index = Arrays.binarySearch(alumns,alumno);
-
-        if (index >= 0){
-            alumns[index].setNota(nota);
-        }else{
-            System.out.println("User not found");
+        for (int i = 0; i < alumns.length; i++) {
+            if(this.getAlumno(i)!=null){
+                if(alumns[i].getName().equalsIgnoreCase(alumno)){
+                    alumns[i].setNota(nota);
+                }
+            }
         }
     }
 
 
-    public void  getAttAlmns(){
+    public void  getAllAlumns(){
 
         for(int i =0; i < alumns.length;i++){
             if(alumns[i]!=null){
@@ -70,14 +67,16 @@ if (index >= 0){
 
 public void getDatosAlumno(String nAlumn){
 
+    for (int i = 0; i < alumns.length; i++) {
+if(this.getAlumno(i)!=null){
 
-    int index = Arrays.binarySearch(alumns,nAlumn);
-
-    if (index >= 0){
-        this.getAlumno(index);
-    }else{
-        System.out.println("User not found");
+    if(alumns[i].getName().equalsIgnoreCase(nAlumn)){
+        System.out.println( alumns[i]);
     }
+}
+    }
+
+
     }
 
 

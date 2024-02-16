@@ -1,0 +1,18 @@
+En herencia se debe de entender que existen:
+
+Persona.
+Caracteristicas comunes: Nombre-Genero-Edad- Lugar de residencia.
+Comportamientos comunes: Comen - Duermen - Hablan - Se mueven.
+Cada clase puede tener sus propos comportamientos (metodos o variables).
+Debemos de crear una raiz general que se ocupara para todos los objetos que se van a crear.
+
+Podemos aplicar casi siempre la regla de "Es un" de la siguiente manera:
+Un jefe siempre " es un  " empleado?
+Un empleado " es  un " jefe?
+
+En este ejemplo un Jefe siempre en un Empleado
+al crear la herencia se coloca a:
+Empleado arriba dejandolo como superclase o clase padre
+Jefe abajo
+
+Recordar por mucho que las cosas se vean extraordinarias todo siempre tiene una base.

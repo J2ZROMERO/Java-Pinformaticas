@@ -1,6 +1,8 @@
 package com.poo.classes_objects.empleado;
 
 
+import java.util.GregorianCalendar;
+
 // en un fichero java se puede construir varias clases
 // only one class is allowed to contain the main method
 // final word sets the variable as constant
@@ -12,45 +14,55 @@ package com.poo.classes_objects.empleado;
 public class UsoEmpleado {
     public static void main(String[] args) {
 
-        Empleados empleado1 = new Empleados("Jose");
-        System.out.println(empleado1.getDatosEmpleado());
-        Empleados empleado2 = new Empleados("Juan");
-        System.out.println(empleado2.getDatosEmpleado());
-        Empleados empleado3 = new Empleados("zepeda");
-        System.out.println(empleado3.getDatosEmpleado());
+        Empleados antonio = new Empleados("Antonio", 3000,2024,01,19);
+        Jefes jose =  new Jefes("Jose",5000,1998,03,19);
 
-        System.out.println(Empleados.getIdSiguiente());
-
-
+        System.out.println(antonio.getDatosEmpleado());
+        System.out.println(jose.getDatosEmpleado());
 
     }
 }
 
 
 class Empleados {
-
-
-    public Empleados(String name){
+    public Empleados(String name, double sueldo, int ano, int mes, int dia){
         this.name = name;
-        section ="Administration";
+        this.sueldo = sueldo;
+        this.calendario = new GregorianCalendar(ano,mes,dia);
+
         id = idSiguiente;
         idSiguiente++;
     }
-
-    public void setSeccion(String seccion){
-        this.section =  seccion;
+    public String getDatosEmpleado(){
+        return "El empleado " + name + " Y tiene el numero "+ id ;
     }
 
-    public String getDatosEmpleado(){
-        return "El empleado " + name + " pertenece a la seccion "+ section + " Y tiene el numero "+ id ;
+    public double getSueldo(){        return this.sueldo;};
+    public GregorianCalendar getFechaAlta(){ return this.calendario;};
+
+    public void setSubeSalario(double porcentaje){
+        double aumento= (this.sueldo*porcentaje)/100;
+        sueldo+=aumento;
+
     }
 
     public static String getIdSiguiente(){
         return "El id del siguiente empleado sera " + idSiguiente;
     }
     private final String name; // now this is constant
-    private  String section;
     private int id;
     private static int idSiguiente=1;
+    private double sueldo;
+    private GregorianCalendar calendario;
 
+}
+
+
+
+class Jefes extends Empleados{
+
+
+    public Jefes(String name, double sueldo, int ano, int mes, int dia) {
+        super(name, sueldo, ano, mes, dia);
+    }
 }

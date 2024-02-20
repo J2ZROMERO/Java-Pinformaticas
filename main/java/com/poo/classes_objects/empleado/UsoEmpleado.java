@@ -16,9 +16,10 @@ public class UsoEmpleado {
 
         Empleados antonio = new Empleados("Antonio", 3000,2024,01,19);
         Jefes jose =  new Jefes("Jose",5000,1998,03,19);
-
+    jose.setIncentivo(500);
         System.out.println(antonio.getDatosEmpleado());
         System.out.println(jose.getDatosEmpleado());
+        System.out.println(jose.getSueldo());
 
     }
 }
@@ -56,13 +57,23 @@ class Empleados {
     private GregorianCalendar calendario;
 
 }
-
-
-
 class Jefes extends Empleados{
-
-
     public Jefes(String name, double sueldo, int ano, int mes, int dia) {
+
         super(name, sueldo, ano, mes, dia);
+
     }
+    public void setIncentivo(double incentivo){
+      this.incentivo = incentivo;
+    };
+
+    public double getSueldo(){
+
+        double sueldoJefe = super.getSueldo();
+        return sueldoJefe+incentivo;
+
+    };
+    private double incentivo;
+
+
 }

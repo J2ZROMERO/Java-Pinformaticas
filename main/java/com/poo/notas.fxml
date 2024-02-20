@@ -24,5 +24,14 @@ Al momento en que heredamos, al heredar el constructor necesitamos usar el const
 aqui entra la famosa palabra SUPER() -> esto quiero decir que viene viene de la superclase llamando al constructor de la
 clase padre.
 
+- Hay algo que se llama sobre escritura de metodos
+-Podemos llamar a un incentivo como "comportamiento", pensar en esto al aplicar la herencia
+
+- si nosotros creamos dos metodos iguales halando de herencia este segtundo sobreescribe al primero
+- si queremos llamar a un metodo que se llama igual al que tenemos que usar super.getMetodo() --> desde el padre
+- Una clase puede sobreescribir muchos metdos.
+
+
+
 
 

@@ -14,13 +14,31 @@ import java.util.GregorianCalendar;
 public class UsoEmpleado {
     public static void main(String[] args) {
 
+
+        Jefes juan = new Jefes("juan",200000,2004,01,01);
+
+        Empleados [] losEmpleados =  new Empleados[5];
+        losEmpleados[0] =  new Empleados("jhosep ",1500,2024,02,10);
+        losEmpleados[1] =  new Empleados("juan ",2000,2024,03,11);
+        losEmpleados[2] =  new Empleados("carlos ",2500,2024,04,12);
+        losEmpleados[3] =  new Empleados("ruby ",3000,2024,05,13);
+        losEmpleados[4] = juan;
+
+
+        for(Empleados e: losEmpleados){
+            System.out.println(e.getDatosEmpleado()+ "con un salario de  " + e.getSueldo());
+        }
+
+
+
+        /*
         Empleados antonio = new Empleados("Antonio", 3000,2024,01,19);
         Jefes jose =  new Jefes("Jose",5000,1998,03,19);
     jose.setIncentivo(500);
         System.out.println(antonio.getDatosEmpleado());
         System.out.println(jose.getDatosEmpleado());
         System.out.println(jose.getSueldo());
-
+        */
     }
 }
 

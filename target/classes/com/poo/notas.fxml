@@ -27,10 +27,44 @@ clase padre.
 - Hay algo que se llama sobre escritura de metodos
 -Podemos llamar a un incentivo como "comportamiento", pensar en esto al aplicar la herencia
 
--- si nosotros creamos dos metodos iguales halando de herencia este segtundo sobreescribe al primero
+- si nosotros creamos dos metodos iguales halando de herencia este segtundo sobreescribe al primero
 - si queremos llamar a un metodo que se llama igual al que tenemos que usar super.getMetodo() --> desde el padre
+- Una clase puede sobreescribir muchos metdos.
+
+- si una clase no tiene constructor entonces esta tiene uno por defecto
+- Cuando se herencia multiple se trata es cuando se debe de
+- si creamos un metodo con el mismo nombre aun en cadena profunda de 5
+- recordar que todo hereda de Object = clase cosmica = super clase padre esta esta en lo alto de la jerarquia de herencia
+por lo tanto heredaran sus metodos. aqui nace el metodo toString();
+- En java no existe la herencia multiple
+- si nosotros queremos que una clase no se pueda heredar lo que debemos de hacer es
+::::: final class clase3 extends otraclase(){} esto detiene la herendia ::::::
+- recordar la  herarquia de herencia.
+- recordar que agregar private solo encapsula el contenido en la misma clase.
 
 
+MODIFICADORES DE ACCESO
 
+variables - constantes - metodos - classes
+
+public - permisivo
+private - prohibitivo
+
+
+modificador    clase > package > subclase > todos
+public          si        si        si        si
+private         si        no        no        no
+protected       si        si        si        no
+default         si        si        no        no
+
+O heredamos o instanciamos
+cuando se habla de subclase es herencia de clase a otra clase
+todos = no puede acceder desde otro paquete una clase de paquete diferente y no heredamos
+por defecto | default ==
+
+
+// POLIMORFISMO-PRINCIPIO DE SUSTITUCION Y ENLAZADO DINAMICO
+
+siempre que se encuentre en  una herencia se podria
 
 

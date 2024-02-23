@@ -24,10 +24,16 @@ public class UsoEmpleado {
         losEmpleados[3] =  new Empleados("ruby ",3000,2024,05,13);
         losEmpleados[4] = juan;
 
+        Jefes maria = new Jefes("maria",5000,2024,02,02); // == downcasting
+        Empleados patricia = maria;  // == downcasting
 
+
+
+
+/*
         for(Empleados e: losEmpleados){
             System.out.println(e.getDatosEmpleado()+ "con un salario de  " + e.getSueldo());
-        }
+        }*/
 
 
 

@@ -75,6 +75,25 @@ un ejemplo podria ser una sobre escritura de los metodos puede llamarse igual pe
 
 PRINCIPIO DE SUSTITUCION = " ES UN "
 
+CASTING DE OBJECTOS ( tipos primitivos o de objetos)
+= consiste en almacenar un variable de un tipo en otra variable de otro tipo
+en el ejemplo de empleados  = upcasting = casting implicito
+
+Upcasting =  un objecto heredante almacenarlo arriba;
+downcasting = objecto de la clase superpadre a ser intentado almacenarlo en una clase jefes; (casting explicito);
+
+(Jefes) Patricia  = downcasting = el principio de sustitucion = para hacer un casting necesitamos que el elemento  a
+castear tenga algo del elemento dentro de.
+DEBE DE HAVER UN OBJETO IGUAL AL QUE SE QUEIRE CASTEAR DENTRO DEL ELEMENTO CONTENEDOR DE
+
+Empleado isa =  new Jefes();
+Jefes isabel = (Jefes) isa;   //  el casting esta completo
+
+significa jalar todos los metodos de esa persona o instancia a nuestra clase.
+
+
+
+
 
 
 

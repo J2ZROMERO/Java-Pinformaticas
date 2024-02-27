@@ -65,6 +65,35 @@ por defecto | default ==
 
 // POLIMORFISMO-PRINCIPIO DE SUSTITUCION Y ENLAZADO DINAMICO
 
-siempre que se encuentre en  una herencia se podria
+cuando nustra clase usada este  heredando de otra es entonces cuando podemos crear elementos padre y almacenar elementoshijos
+siempre que se encuentre en  una herencia se podria hacerse de este modo
+
+Polimorfismo = consiste en que un objecto puede tomar muchas poliformas / formas, este puede cambiar de forma
+un ejemplo podria ser una sobre escritura de los metodos puede llamarse igual pero comportarse distinto
+--> puede que todo sea igual pero si es sobreescrito ya tiene nuevos valores
+--> Enlazado dinamico = es cuando java reconoce a que metodo es el que se debe de llamar, desde que clase esta siendo llamado
+
+PRINCIPIO DE SUSTITUCION = " ES UN "
+
+CASTING DE OBJECTOS ( tipos primitivos o de objetos)
+= consiste en almacenar un variable de un tipo en otra variable de otro tipo
+en el ejemplo de empleados  = upcasting = casting implicito
+
+Upcasting =  un objecto heredante almacenarlo arriba;
+downcasting = objecto de la clase superpadre a ser intentado almacenarlo en una clase jefes; (casting explicito);
+
+(Jefes) Patricia  = downcasting = el principio de sustitucion = para hacer un casting necesitamos que el elemento  a
+castear tenga algo del elemento dentro de.
+DEBE DE HAVER UN OBJETO IGUAL AL QUE SE QUEIRE CASTEAR DENTRO DEL ELEMENTO CONTENEDOR DE
+
+Empleado isa =  new Jefes();
+Jefes isabel = (Jefes) isa;   //  el casting esta completo
+
+significa jalar todos los metodos de esa persona o instancia a nuestra clase.
+
+
+
+
+
 
 

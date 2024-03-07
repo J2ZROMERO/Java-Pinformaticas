@@ -3,52 +3,67 @@ package com.poo.classes_objects.generador_contrasenas;
 import java.util.Random;
 
 public class Password {
-    public static void main(String[] args) {
 
-        Password p = new Password();
-        p.setTamanoArray(5);
-        p.setTamanoPass(4);
+    public Password(int tamanoPass){
+        this.tamanoPass = tamanoPass;
+        passwordGenerated = GenetarePassword();
+    }
 
-        for (int i = 0; i < p.tamanoArray(); i++) {
-            System.out.println(p.generarPassword()[i]);
+
+    public String GenetarePassword(){
+        String  pass =  "";
+        for (int i = 0; i < this.tamanoPass ; i++) {
+            int mayusMinus = ((int)(Math.random()*3+1));
+            if(mayusMinus==1){
+              pass += (char)((int)(Math.random()*(123-97)+97)); // minusculas
+            }else if(mayusMinus == 2){
+                pass += (char)((int)(Math.random()*(91-65)+65)); // mayusculas
+            }else{
+                pass += (char)((int)(Math.random()*(58-48)+48)); // numbers
+            }
+
+
+
         }
 
+        return pass;
     }
 
 
-    public String []generarPassword(){
-        String generatedPass = "";
-        Random rnd = new Random();
+    public String esSegura()   {
+        int numeros = 0;
+        int minusculas = 0;
+        int mayusculas = 0;
+        for (int i = 0; i < passwordGenerated.length(); i++) {
+            if (Character.isLowerCase(passwordGenerated.charAt(i))) {
+                minusculas += 1;
+            } else if (Character.isUpperCase(passwordGenerated.charAt(i))) {
+                mayusculas += 1;
+            } else {
 
-        for (int j = 0; j < tamanoArray(); j++) {
-            generatedPass += (""+(Math.abs(rnd.nextInt()))).substring(0,1)
-            +""+
-                    (char)(Math.abs(rnd.nextInt((122-97)+1)+97))+
-                    (char)(Math.abs(rnd.nextInt((90-65)+1)+65));
-            arrayPasswords[j] = generatedPass.substring(0);
-            generatedPass = "";
+                numeros += 1;
+            }
         }
 
-    return arrayPasswords;
+                if (numeros >= 5 && minusculas >= 1 && mayusculas >= 2) {
+                    return "Contraseña segura";
+                }
+                            else {
+                            return "Contraseña débil";
+            }
+
+        }
+
+
+    public int  getLongitudPassword(){
+        return this.tamanoPass;
     }
 
+    public String getPassword() {
+    return passwordGenerated;
+    };
 
-    public void setTamanoPass(int tamano){
-        this.longitudPass = tamano;
-    }
 
-    public void setTamanoArray(int tamano){
-
-        arrayPasswords = new String[tamano];
-    }
-
-public int tamanoArray(){
-        return arrayPasswords.length;
-}
-
-/*public int longitudPasswrord(){
-        return totalPass.length;
-    }*/
-    private String[] arrayPasswords;
-    private int longitudPass;
+    private String passwordGenerated;
+    private int tamanoPass;
 }

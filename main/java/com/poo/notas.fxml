@@ -91,7 +91,14 @@ Jefes isabel = (Jefes) isa;   //  el casting esta completo
 
 significa jalar todos los metodos de esa persona o instancia a nuestra clase.
 
+Agregar final enfrente de una clase la invalida para herencia.
+Recordar que final invalida las clases para herencia
 
+paso de  multiples parametros a un mismo metodo se le denomina POLIMORFISMO, ENLAZADO DINAMICO
+
+si no deseamos que un metodo no se llame igual inclusive en herencia, impedir clases hereden otras con el mismo nombre
+
+final public double getSueldo();
 
 
 

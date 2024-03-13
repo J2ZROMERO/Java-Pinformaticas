@@ -81,7 +81,7 @@ class Empleados {
     private GregorianCalendar calendario;
 
 }
-class Jefes extends Empleados{
+final class Jefes extends Empleados{
     public Jefes(String name, double sueldo, int ano, int mes, int dia) {
 
         super(name, sueldo, ano, mes, dia);
@@ -101,3 +101,15 @@ class Jefes extends Empleados{
 
 
 }
+
+/*
+class Directores extends Jefes{
+
+    public Directores(String name, double sueldo, int ano, int mes, int dia) {
+        super(name, sueldo, ano, mes, dia);
+    }
+
+
+
+}
+*/

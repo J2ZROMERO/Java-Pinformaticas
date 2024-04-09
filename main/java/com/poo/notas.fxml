@@ -98,8 +98,29 @@ paso de  multiples parametros a un mismo metodo se le denomina POLIMORFISMO, ENL
 
 si no deseamos que un metodo no se llame igual inclusive en herencia, impedir clases hereden otras con el mismo nombre
 
-final public double getSueldo();
+final public double getSueldo(); --> con esto nosotros heredamos clases pero no podemos crear algun metodo con el mismo
+nombre de metodo
+public final class algunaClase()  --> impedimos que una clase la usen para herencia
 
+-------------
+Clases abstractas
+si nos apuntamos de abajo hacia arriba en una herencia --> estos son menos especifias menos funcionales o mejor dicho
+mas abstractas
+
+que es declarar un metodo abstracto = solo declarar el nombre del metodo pero nada mas no debemos desarrollarlo
+por eso es que no se desarrolla.
+public abstract String metodoAbstracto();
+a esto es cuando nos preguntamos que pasa cuando queremos declarar un metodo abstracto
+public String getName() probablemente lleve un mismo return variable que es name
+pero el abstract puede llevar otras cosas
+estas deben si o si implementarse una vez ques estas se heredan
+se obliga  aser implementada
+entonces una Clase abstracta es aquella clase que tiene al menos un metodo abstracto
+entonces si hay un metodo abs entonces esta es una clase y se debe de declar como abstracta a esa clase.
+y porque no declaro un metodo  a cada clase??? ENTONCES SE DICE QUE CUANDO SE HACE DE ESTE MODO ES PORQUE MARCAMOS LA PAUTA DEL DISEÑO
+A SEGUIR OSEA QUE DEBEMOS SI O SI OBLIGARLES A RESPETAR EL DISEÑO DE LA HERENCIA. CUANDO HAY MUCHOS PROGRAMADORES Y ELLOS
+NO SABEN CUAL SI SE DEBE ENTONCES NOSOTROS COMO DISEÑADORES DE ESTO LES DECIMOS QUE SOBREESCRIBAN ESTE Y LA META AUEVO
+el sentido de la abstract es marcar la pauta a seguir en el diseño de la herencia
 
 
 

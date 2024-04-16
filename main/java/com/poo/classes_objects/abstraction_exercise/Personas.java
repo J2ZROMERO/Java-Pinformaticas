@@ -1,4 +1,4 @@
-package main.java.com.poo.classes_objects.abstraction_exercise;
+package com.poo.classes_objects.abstraction_exercise;
 
 import java.util.Date;
 

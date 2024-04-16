@@ -1,18 +1,22 @@
-package main.java.com.poo.classes_objects.abstraction_exercise;
+package com.poo.classes_objects.abstraction_exercise;
 
 import java.util.Date;
 
 public class Uso_personas {
 
     public static void main(String[] args) {
-        Personas juan;
 
-        Empleados jose =  new Empleados("Jose", new Date(5465454),2500);
+        Empleados juan = new Empleados("jose",new Date(5465454),2500);
+        Jefes ana = new Jefes("ana",new Date(5465454),3000);
+        Alumnos maria = new Alumnos("pepito", "dibujo","aula 5 ");
 
-        juan = jose;
+
+        System.out.println(juan.getNombre());
+        System.out.println(ana.getDescripcion());
 
 
-        System.out.println(juan);
+
+
 
     }
 }

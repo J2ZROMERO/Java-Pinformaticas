@@ -79,10 +79,16 @@ CASTING DE OBJECTOS ( tipos primitivos o de objetos)
 = consiste en almacenar un variable de un tipo en otra variable de otro tipo
 en el ejemplo de empleados  = upcasting = casting implicito
 
-Upcasting =  un objecto heredante almacenarlo arriba;
-downcasting = objecto de la clase superpadre a ser intentado almacenarlo en una clase jefes; (casting explicito);
+Upcasting =  un objecto heredante almacenarlo arriba; /
+        Se realiza de forma implícita cuando un objeto de la subclase se convierte en un tipo de la superclase.
 
-(Jefes) Patricia  = downcasting = el principio de sustitucion = para hacer un casting necesitamos que el elemento  a
+
+        downcasting = objecto de la clase superpadre a ser intentado almacenarlo en una clase jefes; (casting explicito);
+        Se realiza de forma explícita cuando un objeto de la superclase se convierte en un tipo de la subclase.
+
+
+
+        (Jefes) Patricia  = downcasting = el principio de sustitucion = para hacer un casting necesitamos que el elemento  a
 castear tenga algo del elemento dentro de.
 DEBE DE HAVER UN OBJETO IGUAL AL QUE SE QUEIRE CASTEAR DENTRO DEL ELEMENTO CONTENEDOR DE
 

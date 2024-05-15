@@ -150,6 +150,8 @@ no tiene variables. sino constantes.
 
 public interface ParaJefes { }
 
-
+las interfaces no marcan el diseño de la herencia
+el uso de trabajar con interfaces predefinidas
+en la api de java todo lo que este en cursiva es que quiere decir que esta es una interfaz
 
 

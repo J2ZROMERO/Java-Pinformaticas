@@ -24,7 +24,7 @@ public abstract String getDescripcion();
 
 
 
-class Empleados extends Personas {
+class Empleados extends Personas implements Comparable{
 
 public Empleados(String nom, Date fechaAlta, double sueldo){
     super(nom);
@@ -41,6 +41,16 @@ return "El empleado " + this.getNombre() + " tiene un sueldo " +
 private double sueldo;
 private Date fechaAlta;
 
+    @Override
+    public int compareTo(Object o) {
+        Empleados otroEmpleado = (Empleados) o;
+
+        if(this.sueldo<otroEmpleado.sueldo) return -1;
+        if(this.sueldo>otroEmpleado.sueldo) return 1;
+        return 0;
+
+
+    }
 }
 
 class Jefes extends  Empleados implements ParaJefes {

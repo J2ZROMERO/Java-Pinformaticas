@@ -1,5 +1,7 @@
 package com.poo.classes_objects.abstraction_exercise;
 
+import com.poo.classes_objects.interfaces.ParaJefes;
+
 import java.util.Date;
 
 public abstract class Personas {
@@ -41,16 +43,27 @@ private Date fechaAlta;
 
 }
 
-class Jefes extends  Empleados {
+class Jefes extends  Empleados implements ParaJefes {
 
     public Jefes(String name, Date fechaAlta, double sueldo){
         super(name,fechaAlta,sueldo);
     }
 
+    @Override
+    public void setCargo(String cargo) {
+    this.cargo= cargo;
+    }
+
+    @Override
+    public String getCargo() {
+        return "\n Ademas tiene el cargo de "+ this.cargo;
+    }
+
     public void setIncentivo(double  incentivo){
         this.incentivo = incentivo;
     }
-private double incentivo;
+    private double incentivo;
+    private String cargo;
 }
 
 

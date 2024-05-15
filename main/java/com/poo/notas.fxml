@@ -134,5 +134,23 @@ esta subclase tendra el metodo por defecto incluido y no tendra necesidad de ser
 
 !!!!! NO SE PUEDE INSTANCIAR UNA CLASE ABSTRACTA - OSEA NOSE PEUDE LLAMAR AL CONSTRUCTOR !!!!!
 !!! SI SE PODRIAN CREAR VARIABLES OBJETO TAL VEZ!!!!
+-- recorar que la una clase abstracta no puede heredar de varias clases a la vez
+
+
+//////////// INTERFACES
+conjunto de directrices( comportamientos | metodos | normas a seguir ) que deben cumplir las clases.
+el proposito de las interfaces es que estan deben de.
+Los metodos normales no pueden dobligar a sobrescribirse
+implements es para añadir las interfaces....
+!!!!!estas solo contienen metodos abstractos y constantes....!!!!!!!!1
+se almacenan en un fichero.class
+        no se pueden instanciar
+todos los metodos public y abstract y estos no se dearrollan
+no tiene variables. sino constantes.
+
+public interface ParaJefes { }
+
+las interfaces no marcan el diseño de la herencia.
+
 
 

@@ -30,11 +30,15 @@ public class Uso_personas {
         Arrays.sort(los_empleados);
 
         for( Empleados e : los_empleados){
-
-
             System.out.println(e.getDescripcion());
         }
 
+
+        Jefes manuel = new Jefes("Manuel", new Date(646546),5000);
+        Empleados sonia = new Empleados("SONIA", new Date(6456465),3000);
+
+
+        System.out.println("el trabajador " + manuel.getNombre() + " tiene  un bonus de " + manuel.setBonus(5000));
 
 
     }

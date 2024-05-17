@@ -153,5 +153,15 @@ public interface ParaJefes { }
 las interfaces no marcan el diseño de la herencia
 el uso de trabajar con interfaces predefinidas
 en la api de java todo lo que este en cursiva es que quiere decir que esta es una interfaz
+las interfaces pueden heredar de otras interfaces usando la palabra reservada extends ------
+
+        interfaz1 extends interfaz2
+        public abstract double setBonus(double gratificacion);
+        esto es lo mismo que
+        double setBonus(double gratificacion);
+estas solo pueden albergar constantes pulic abstract double VALOR=0;
+si es posible crear una jerarquia de herencia entre dos interfaces
+
+
 
 

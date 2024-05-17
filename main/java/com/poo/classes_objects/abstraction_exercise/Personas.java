@@ -1,6 +1,7 @@
 package com.poo.classes_objects.abstraction_exercise;
 
 import com.poo.classes_objects.interfaces.ParaJefes;
+import com.poo.classes_objects.interfaces.ParaTrabajadores;
 
 import java.util.Date;
 
@@ -24,7 +25,7 @@ public abstract String getDescripcion();
 
 
 
-class Empleados extends Personas implements Comparable{
+class Empleados extends Personas implements Comparable, ParaTrabajadores{
 
 public Empleados(String nom, Date fechaAlta, double sueldo){
     super(nom);
@@ -51,6 +52,13 @@ private Date fechaAlta;
 
 
     }
+
+    @Override
+    public double setBonus(double gratificacion) {
+        return ParaTrabajadores.BONUS + gratificacion;
+    }
+
+
 }
 
 class Jefes extends  Empleados implements ParaJefes {
@@ -74,6 +82,13 @@ class Jefes extends  Empleados implements ParaJefes {
     }
     private double incentivo;
     private String cargo;
+
+    @Override
+    public double setBonus(double gratificacion) {
+    double prima = 2000;
+
+        return prima + gratificacion + ParaTrabajadores.BONUS;
+    }
 }
 
 

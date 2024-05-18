@@ -161,6 +161,7 @@ las interfaces pueden heredar de otras interfaces usando la palabra reservada ex
         double setBonus(double gratificacion);
 estas solo pueden albergar constantes pulic abstract double VALOR=0;
 si es posible crear una jerarquia de herencia entre dos interfaces
+// recordar que podemos tener el mismo nombre de clases si estas estan en diferentes paquetes
 
 
 

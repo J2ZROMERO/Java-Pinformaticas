@@ -1,6 +1,8 @@
 module com.example.java {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.management;
+    requires java.desktop;
     exports com.javafx.Layouts;
     exports com.javafx.Ventanas;
     exports com.javafx.Emergente;

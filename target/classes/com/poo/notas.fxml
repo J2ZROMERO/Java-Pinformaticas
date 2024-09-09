@@ -162,6 +162,11 @@ las interfaces pueden heredar de otras interfaces usando la palabra reservada ex
 estas solo pueden albergar constantes pulic abstract double VALOR=0;
 si es posible crear una jerarquia de herencia entre dos interfaces
 // recordar que podemos tener el mismo nombre de clases si estas estan en diferentes paquetes
+// clase interna  = clase dentro de otra   //usado en eventos o listernes // literalemente es una clase creada debajo de otra
+// clase aninoma =  clase que no tiene nombre //usado en eventos o listernes -- llamada anonima porque no se usa el nombre
+de la clase solo agregamos en constructor enfrente y continuamos...
+
+
 
 
 

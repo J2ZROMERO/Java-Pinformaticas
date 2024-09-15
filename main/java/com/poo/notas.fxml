@@ -165,7 +165,10 @@ si es posible crear una jerarquia de herencia entre dos interfaces
 // clase interna  = clase dentro de otra   //usado en eventos o listernes // literalemente es una clase creada debajo de otra
 // clase aninoma =  clase que no tiene nombre //usado en eventos o listernes -- llamada anonima porque no se usa el nombre
 de la clase solo agregamos en constructor enfrente y continuamos...
-
+// una interfaz puede funciones como para declarses como tipo de dato para poder  crear instancias de solo que estas son referencias
+mas no un tipo de datos.
+        package com.poo.classes_objects.interfaces.vehiculo;
+        usoVehiculo[] vehiculos = new usoVehiculo[6];
 
 
 

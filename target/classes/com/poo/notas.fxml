@@ -165,9 +165,31 @@ si es posible crear una jerarquia de herencia entre dos interfaces
 // clase interna  = clase dentro de otra   //usado en eventos o listernes // literalemente es una clase creada debajo de otra
 // clase aninoma =  clase que no tiene nombre //usado en eventos o listernes -- llamada anonima porque no se usa el nombre
 de la clase solo agregamos en constructor enfrente y continuamos...
+// una interfaz puede funciones como para declarses como tipo de dato para poder  crear instancias de solo que estas son referencias
+mas no un tipo de datos.
+        package com.poo.classes_objects.interfaces.vehiculo;
+        usoVehiculo[] vehiculos = new usoVehiculo[6];
 
 
 
 
+// clases internas  == inner class
+para acceder a los campos privados de ua clase a otra clase
+para ocualtar una clase de otras pertenecientes al mismo paquete
+para  crear clases internas anonimas, muy utiles para gestionar eventos y retrollamadas
+cuando solo una calse debe accedera los campos de ejemplar de otra clase
+solo podemos declarar una clase como private si esta es una inner class
 
+clases que se encuentran dentro de otras,
+clases internas locales
+se encuentran dentro de un metodo,
+uso de estan cuando se instancian clases internas una unica vez
+!! CUANDO SOLO SE VA  A INSTANCIAR UNA UNICA VEZ !!
+su ambiyo solo queda restringido  a donde son declaradas,
+estan muy encapsuladas, nisiquires la calse a la que pertenecen pueden acceder
+a ella
 
+!! esta clase se declara dentro un de metodos !!
+estas no pueden tener modificadores de acceso,
+esto solo es accesible dentro del ambito del metodo
+!! SE PERMITE EL ACCESO DE DENTRO HACIA AFUERA, pero el aCCESO A ESTA CLASE NO PUEDE SER DE FUERA HACUA DENTRO

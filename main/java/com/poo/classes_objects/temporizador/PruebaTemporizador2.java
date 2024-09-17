@@ -20,7 +20,7 @@ class Reloj {
 
     public void ejecutarIntervalo(int intervalo,boolean sonido){
 
-         class DameLaHora implements ActionListener{
+       /*  class DameLaHora implements ActionListener{
 
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -29,9 +29,14 @@ class Reloj {
                 if(sonido) Toolkit.getDefaultToolkit().beep();
             }
         }
-
-        ActionListener oyente = new DameLaHora();
-        Timer miTemporizador = new Timer(intervalo,oyente);
+*/
+       // ActionListener oyente = new DameLaHora();
+        Timer miTemporizador = new Timer(intervalo, e -> {
+            Date ahora  = new Date();
+            System.out.println("la hora es cada 23 segundos" + ahora);
+            if(sonido) Toolkit.getDefaultToolkit().beep();
+        }
+        );
         miTemporizador.start();
     }
 

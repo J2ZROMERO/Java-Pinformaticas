@@ -193,3 +193,12 @@ a ella
 estas no pueden tener modificadores de acceso,
 esto solo es accesible dentro del ambito del metodo
 !! SE PERMITE EL ACCESO DE DENTRO HACIA AFUERA, pero el aCCESO A ESTA CLASE NO PUEDE SER DE FUERA HACUA DENTRO
+
+
+// clases internas anonimas
+son clases internas pero estas no tienen nombre =  anonimo
+es util  para crear una calse inline, = sobre la marcha evita tener que crear
+una clase adicional en nuestro codigo para despues crear una instancia
+util para gestionar eventos, interfaces graficas  que interaccionan con controles botones o menus
+las clases internas anonimas son aquellas que, en su sintaxis es casi similar a como si instanciaramos algo
+en este caso es new ActionListener(){} no olvidar que una clase presinde de tener abierto y cerrado, sus llaves

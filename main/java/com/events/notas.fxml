@@ -1,0 +1,21 @@
+Event notas
+
+//  un evento es un desencadenante de una accion
+// cuando hacemos click en un boton o nos movemos con cursor, disparar una
+accion indica una accion, eventos:
+- Raton
+- Ventana
+- Teclado
+- 3 factores
+¿Que  desencadena la accion? = al hacer click = objeto evento
+¿Quien desencadena la accion? = el boton de negrita = objeto fuente
+¿Quien recibe la accion? = objeto listener = objeto que recibe  la accion
+
+para hava un evento es = un objeto, estos se pueden contruir en tiempo de ejecucion.
+
+eventos raton = action event
+evento ventana = windows event
+evento teclado = evento teclado
+
+los parametros implicitos existentes en cada evento son generados en tiempo de ejecucion
+- para cada tipo de evento hay una interfaz especial

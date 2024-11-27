@@ -23,26 +23,41 @@ class MarcoBotonesColores extends  JFrame{
     }
 }
 
-class LaminaBotonesColores extends JPanel implements ActionListener {
+class LaminaBotonesColores extends JPanel {
     JButton negro = new JButton("Negro");
     JButton amarillo = new JButton("Amarillo");
     JButton  blanco =  new JButton("Blanco");
     public LaminaBotonesColores(){
 
-    negro.addActionListener(this);
-    amarillo.addActionListener(this);
-    blanco.addActionListener(this);
+        ColorDefondo Azul =  new ColorDefondo(Color.BLUE);
+        ColorDefondo Rojo =  new ColorDefondo(Color.RED);
+        ColorDefondo Verde =  new ColorDefondo(Color.GREEN);
+
+
+
+
+    negro.addActionListener(Azul);
+    amarillo.addActionListener(Rojo);
+    blanco.addActionListener(Verde);
+
     add(negro);
     add(amarillo);
     add(blanco);
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        Object miboton = e.getSource();
-        if (miboton == negro)  setBackground(Color.black);
-        else if(miboton == amarillo) setBackground(Color.yellow);
-        else setBackground(Color.white);
+    private class ColorDefondo implements ActionListener {
+
+        public ColorDefondo(Color c){
+            coloDeFondo = c;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            setBackground(coloDeFondo);
+        }
+
+        private Color coloDeFondo;
 
     }
 }
+

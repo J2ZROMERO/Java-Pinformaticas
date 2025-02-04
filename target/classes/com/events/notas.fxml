@@ -19,3 +19,9 @@ evento teclado = evento teclado
 
 los parametros implicitos existentes en cada evento son generados en tiempo de ejecucion
 - para cada tipo de evento hay una interfaz especial
+
+
+Eventos de ventana
+Recordar que hay diferentes typos de eventos
+
+crear un mapa de entrada  =decirle a nuestra appp quien tiene el foco
